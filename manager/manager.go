@@ -12,7 +12,7 @@ type Manager struct {
 	Pending       queue.Queue
 	TaskDb        map[string][]*task.Task
 	EventDb       map[string][]*task.Task
-	Worker        []string
+	Workers       []string
 	WorkerTaskMap map[string][]uuid.UUID
 	TaskWorkerMap map[uuid.UUID]string
 }
